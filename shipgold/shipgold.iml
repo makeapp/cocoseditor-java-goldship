@@ -3,8 +3,8 @@
   <component name="FacetManager">
     <facet type="CocosAssets" name="CocosAssets">
       <configuration>
-        <option name="AUTOPACK_TEXTURE" value="false" />
         <option name="ASSETS_HOME" value="$MODULE_DIR$/src/main/assets" />
+        <option name="AUTOPACK_TEXTURE" value="false" />
       </configuration>
     </facet>
   </component>
