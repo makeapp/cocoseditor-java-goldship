@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$APPLICATION_HOME_DIR$/cdk/extras/extras-qihu360-ad/extras-qihu360-ad.iml" filepath="$APPLICATION_HOME_DIR$/cdk/extras/extras-qihu360-ad/extras-qihu360-ad.iml" />
+      <module fileurl="file://$APPLICATION_HOME_DIR$/cdk/extras/extras-tencent-weixin/extras-tencent-weixin.iml" filepath="$APPLICATION_HOME_DIR$/cdk/extras/extras-tencent-weixin/extras-tencent-weixin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shipgold/shipgold.iml" filepath="$PROJECT_DIR$/../shipgold/shipgold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shipgold-android.iml" filepath="$PROJECT_DIR$/shipgold-android.iml" />
+    </modules>
+  </component>
+</project>
+

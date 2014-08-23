@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sprite designWidth="480" designHeight="320" positionX="0"
+        positionY="0" texture="img/shipgold.plist/chain_right_1.png" tag="333" scaleY="1">
+    <!--<Animation name="rightchain" auto="true" loop="-1" unitTime="0.05">-->
+        <!--<KeyFrame texture="img/shipgold.plist/chain_right_1.png"/>-->
+        <!--<KeyFrame texture="img/shipgold.plist/chain_right_2.png"/>-->
+        <!--<KeyFrame texture="img/shipgold.plist/chain_right_3.png"/>-->
+        <!--<KeyFrame texture="img/shipgold.plist/chain_right_4.png"/>-->
+    <!--</Animation>-->
+</Sprite>

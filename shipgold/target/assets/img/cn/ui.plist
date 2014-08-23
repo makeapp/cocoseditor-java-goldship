@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>btn_fx.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0,0},{195,75}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{195,75}}</string>
+			<key>sourceSize</key>
+			<string>{195,75}</string>
+		</dict>
+		<key>btn_qd.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{197,0},{195,75}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{195,75}}</string>
+			<key>sourceSize</key>
+			<string>{195,75}</string>
+		</dict>
+		<key>btn_ks.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{394,0},{290,119}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{290,119}}</string>
+			<key>sourceSize</key>
+			<string>{290,119}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>type</key>
+		<string>packer</string>
+		<key>realTextureFileName</key>
+		<string>ui.png</string>
+		<key>size</key>
+		<string>{2048,2048}</string>
+		<key>smartupdate</key>
+		<string>$TexturePacker:SmartUpdate:cfaf52eb1eb41c7531bf2d0be3f50f2e$</string>
+		<key>textureFileName</key>
+		<string>ui.png</string>
+	</dict>
+</dict>
+</plist>

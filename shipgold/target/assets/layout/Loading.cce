@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scene designWidth="720" designHeight="1280"
+       positionX="0"
+       positionY="0" anchorPointX="0" anchorPointY="0"
+       sizeType="Percent" width="1" height="1">
+
+    <LayerColor width="720" height="1280" color="#ff000000" anchorPointX="0" anchorPointY="0">
+    </LayerColor>
+    <Sprite texture="img/shipgold.plist/icon_cocos_2dit.png" positionX="100" positionY="1150"/>
+    <Sprite texture="img/shipgold.plist/light.png" positionX="360" positionY="640" tag="4000"/>
+
+
+    <Sprite texture="img/shipgold.plist/huangjin1.png" positionX="320" positionY="695"/>
+    <Sprite texture="img/shipgold.plist/huangjin2.png" positionX="340" positionY="700"/>
+    <Sprite texture="img/shipgold.plist/huangjin1.png" positionX="360" positionY="705"/>
+    <Sprite texture="img/shipgold.plist/huangjin3.png" positionX="380" positionY="695"/>
+    <Sprite texture="img/shipgold.plist/huangjin4.png" positionX="350" positionY="715"/>
+    <Sprite texture="img/shipgold.plist/huangjin1.png" positionX="350" positionY="695"/>
+    <Sprite texture="img/shipgold.plist/huangjin3.png" positionX="390" positionY="695"/>
+    <Sprite texture="img/shipgold.plist/huangjin2.png" positionX="410" positionY="695"/>
+
+    <Sprite texture="img/shipgold.plist/loadingcheshen.png" positionX="360" positionY="640"/>
+    <Sprite texture="img/shipgold.plist/chegulu.png" positionX="320" positionY="590"/>
+    <Sprite texture="img/shipgold.plist/chegulu.png" positionX="405" positionY="590"/>
+    <?xml version="1.0" encoding="UTF-8"?>
+
+    <Sprite designWidth="480" designHeight="320" positionX="360"
+            positionY="300" texture="img/shipgold.plist/loading00.png" scaleX="0.7" scaleY="0.7">
+        <Animation name="loading" auto="true" loop="-1" unitTime="0.3">
+            <KeyFrame texture="img/shipgold.plist/loading00.png" positionX="360" positionY="300" scaleX="0.7" scaleY="0.7"/>
+            <KeyFrame texture="img/shipgold.plist/loading01.png" positionX="360" positionY="300" scaleX="0.7" scaleY="0.7"/>
+            <KeyFrame texture="img/shipgold.plist/loading02.png" positionX="360" positionY="300" scaleX="0.7" scaleY="0.7"/>
+            <KeyFrame texture="img/shipgold.plist/loading03.png" positionX="360" positionY="300" scaleX="0.7" scaleY="0.7"/>
+        </Animation>
+    </Sprite>
+    <Sprite designWidth="480" designHeight="320" positionX="360"
+            positionY="710" tag="333" texture="img/shipgold.plist/light_0001.png">
+        <Animation name="goldlight" auto="true" loop="-1">
+            <KeyFrame texture="img/shipgold.plist/light_0001.png"/>
+            <KeyFrame texture="img/shipgold.plist/light_0002.png"/>
+            <KeyFrame texture="img/shipgold.plist/light_0003.png"/>
+            <KeyFrame texture="img/shipgold.plist/light_0004.png"/>
+            <KeyFrame texture="img/shipgold.plist/light_0005.png"/>
+            <KeyFrame texture="img/shipgold.plist/light_0006.png"/>
+        </Animation>
+    </Sprite>
+    <Component name="com.makeapp.game.shipgold.ControllerLoading"/>
+</Scene>

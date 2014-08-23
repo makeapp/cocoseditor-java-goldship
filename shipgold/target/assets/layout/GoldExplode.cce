@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sprite designWidth="480" designHeight="320" positionX="0"
+        positionY="0" texture="img/shipgold.plist/pengzhuang_0001.png">
+    <Animation name="explode" auto="true" loop="1" tag="333" unitTime="0.05">
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0001.png"/>
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0002.png"/>
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0003.png"/>
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0004.png"/>
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0005.png"/>
+        <KeyFrame texture="img/shipgold.plist/pengzhuang_0006.png"/>
+    </Animation>
+</Sprite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layer
+        sizeType="Abstract"
+        width="720" height="1280"
+        anchorPointX="0" anchorPointY="0"
+        scaleX="1" scaleY="1" designWidth="720" designHeight="1280" positionX="0"
+        positionY="0">
+    <LayerColor width="720" height="1280" positionX="0" positionY="0" color="#95000000"
+                anchorPointX="0" anchorPointY="0">
+        <Sprite positionX="360" positionY="640" visible="true" texture="img/shipgold.plist/mianban2.png">
+            <Animation name="pop" auto="true" unitTime="0.1">
+                <KeyFrame index="0" scaleX="0" scaleY="0"/>
+                <KeyFrame index="1" scaleX="1.25" scaleY="1.25"/>
+                <KeyFrame index="2" scaleX="1" scaleY="1"/>
+                <KeyFrame index="3" scaleX="1.15" scaleY="1.15"/>
+                <KeyFrame index="4" scaleX="1" scaleY="1"/>
+            </Animation>
+            <Button positionX="171.0" positionY="63.0" textureNormal="ui.plist/btn_qd.png" name="restart"/>
+            <Button positionX="371.0" positionY="63" textureNormal="ui.plist/btn_fx.png" name="sharing"/>
+            <Component name="com.makeapp.game.shipgold.ControllerMessage"/>
+            <Label fontSize="35" vAlign="Center" hAlign="Center" text="游戏结束了，再来一次!" positionX="270.0" positionY="269.0"
+                   color="#ffff586e" tag="506" sizeType="Abstract" width="500" height="0"/>
+        </Sprite>
+    </LayerColor>
+
+</Layer>
+
+

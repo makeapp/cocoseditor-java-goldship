@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cocosjava-3.2">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/cdk/lib/cocosjava-3.2.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/cdk/lib/android/cocosjava-android-3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

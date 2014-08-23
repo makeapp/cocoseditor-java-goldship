@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sprite designWidth="320" designHeight="480" positionX="0.5"
+        positionY="0.5" texture="img/shipgold.plist/huangjin2.png">
+    <PhysicsBody dynamic="true" mass="10">
+        <PolygonShape>
+            <Vertex x="-8" y="-11"/>
+            <Vertex x="-2" y="12"/>
+            <Vertex x="7" y="10"/>
+            <Vertex x="13" y="2"/>
+            <Vertex x="13" y="-8"/>
+            <Vertex x="10" y="-12"/>
+        </PolygonShape>
+        <PolygonShape>
+            <Vertex x="-13" y="-1"/>
+            <Vertex x="-11" y="7"/>
+            <Vertex x="-2" y="12"/>
+            <Vertex x="-7" y="-10"/>
+            <Vertex x="-10" y="-10"/>
+        </PolygonShape>
+    </PhysicsBody>
+</Sprite>

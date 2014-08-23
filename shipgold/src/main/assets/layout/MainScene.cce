@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene designWidth="720" designHeight="1280" physicsWorld="true" physicsDebug="none">
+    <Layer visible="true"
+           sizeType="Percent" width="1" height="1" anchorPointX="0" anchorPointY="0">
+        <Sprite positionX="1.0" positionY="0.0" rotation="0" anchorPointX="0" anchorPointY="0"
+                visible="true" texture="img/bg.jpg">
+            <Sprite positionX="364.0" positionY="806.0" tag="100" texture="img/shipgold.plist/loudoupengzhuangquyu.png">
+            </Sprite>
+            <Sprite positionX="360.0" positionY="500" tag="1002" visible="true"
+                    texture="img/shipgold.plist/dangbam.png">
+                <PhysicsBody dynamic="false" enable="true" tag="50">
+                    <BoxShape width="199" height="20"/>
+                </PhysicsBody>
+            </Sprite>
+            <Button positionX="670.0" positionY="1225.0" tag="1001" zorder="500"
+                    textureNormal="img/shipgold.plist/btn_zanting.png"
+                    texturePressed="img/shipgold.plist/btn_zanting_s.png">
+            </Button>
+        </Sprite>
+        <PhysicsBody dynamic="false">
+            <EdgeSegmentShape fromX="157" fromY="871" toX="177" toY="799" border="0"/>
+            <EdgeSegmentShape fromX="177" fromY="799" toX="316" toY="743" border="0"/>
+            <EdgeSegmentShape fromX="422" fromY="743" toX="548" toY="800" border="0"/>
+            <EdgeSegmentShape fromX="548" fromY="800" toX="568" toY="870" border="0"/>
+        </PhysicsBody>
+        <Node anchorPointX="0.5" anchorPointY="0.5" positionX="360" positionY="640">
+            <PhysicsBody dynamic="false" tag="51" gravityEnable="false" rest="false">
+                <EdgeBoxShape width="700" height="1250">
+                </EdgeBoxShape>
+            </PhysicsBody>
+        </Node>
+        <!--<JointPin tagA="50" tagB="51" enable="true" anchorPointX="360" anchorPointY="497"/>-->
+        <Component name="com.makeapp.game.shipgold.ControllerMain"/>
+        <Sprite positionX="360.0" positionY="30" tag="5555" scaleX="3.6" texture="img/shipgold.plist/dangbam.png"
+                visible="false">
+            <PhysicsBody dynamic="false" enable="true">
+                <BoxShape width="720" height="20" visible="true"/>
+            </PhysicsBody>
+        </Sprite>
+        <Button textureNormal="ui.plist/btn_ks.png"
+                positionX="360" positionY="400" tag="8000"/>
+        <Label text="按住屏幕金子掉落，松开手停止掉落！" color="#ff8a360f"
+               positionX="367.0" positionY="674.0" fontSize="30" vAlign="Center" hAlign="Center" tag="399"/>
+        <Label positionX="367.0" positionY="1004.0" text="0" hAlign="Center" name="score" texture="font/font.fnt"/>
+        <Sprite positionX="368" positionY="728" tag="298" visible="true"
+                texture="img/shipgold.plist/dangbam.png" scaleX="0.51" scaleY="0.7">
+
+        </Sprite>
+    </Layer>
+
+</Scene>
+
