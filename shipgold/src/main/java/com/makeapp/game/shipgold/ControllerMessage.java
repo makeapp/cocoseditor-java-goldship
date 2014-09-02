@@ -1,15 +1,11 @@
 package com.makeapp.game.shipgold;
 
-import com.googlecode.javacpp.Pointer;
-import org.ccj.Application;
 import org.ccj.Director;
 import org.ccj.base.Ref;
-import org.ccj.d2.Label;
 import org.ccj.editor.cce.Action;
 import org.ccj.editor.cce.Bind;
 import org.ccj.editor.cce.NodeController;
 import org.ccj.editor.cce.NodeReader;
-import org.ccj.storage.Storage;
 import org.fun.FunctionFactory;
 
 /**
@@ -19,13 +15,6 @@ public class ControllerMessage
         extends NodeController {
 
     public int score = 0;
-
-    public ControllerMessage() {
-    }
-
-    public ControllerMessage(Pointer p) {
-        super(p);
-    }
 
     @Override
     public void onEnter() {
@@ -37,7 +26,6 @@ public class ControllerMessage
     public void onResumeTouched(Ref ref) {
         removeFromParent();
     }
-
 
     @Bind("restart")
     @Action(Action.ActionType.WidgetTouchUp)
@@ -57,7 +45,6 @@ public class ControllerMessage
     @Action(Action.ActionType.WidgetTouchUp)
     public void onAdviseTouched(Ref ref) {
 //        FunctionFactory.callFunction("unicompay", "payonline 71664 1 2 2");
-
         FunctionFactory.callFunction("weixin", "sendSession appData 运黄金 我在玩运黄金游戏，你也来试试.");
         removeFromParent();
     }

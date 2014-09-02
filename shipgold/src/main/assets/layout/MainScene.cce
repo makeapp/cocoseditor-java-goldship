@@ -40,7 +40,7 @@
         <Button textureNormal="ui.plist/btn_ks.png"
                 positionX="360" positionY="400" tag="8000"/>
         <Label text="按住屏幕金子掉落，松开手停止掉落！" color="#ff8a360f"
-               positionX="367.0" positionY="674.0" fontSize="30" vAlign="Center" hAlign="Center" tag="399"/>
+               positionX="367.0" positionY="1240" fontSize="30" vAlign="Center" hAlign="Center" tag="399"/>
         <Label positionX="367.0" positionY="1004.0" text="0" hAlign="Center" name="score" texture="font/font.fnt"/>
         <Sprite positionX="368" positionY="728" tag="298" visible="true"
                 texture="img/shipgold.plist/dangbam.png" scaleX="0.51" scaleY="0.7">

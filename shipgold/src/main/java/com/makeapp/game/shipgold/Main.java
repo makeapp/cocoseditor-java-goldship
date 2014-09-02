@@ -5,9 +5,27 @@ import org.ccj.*;
 import org.ccj.base.FileUtils;
 import org.ccj.editor.cce.NodeReader;
 
-
+/**
+ * -Game Engine:Cocos2d-Java
+ * -
+ * -Game Develop Tool:CocosEditor
+ * -
+ * -Doc Links
+ * http://www.cocoseditor.com/ (Office Website)
+ * http://blog.makeapp.co/ (Office Blog)
+ * http://blog.csdn.net/touchsnow (csdn Blog)
+ * https://github.com/makeapp      (github)
+ * -
+ * -Support
+ * E-Mail:  zuowen@makeapp.co
+ * QQ    :  232361142
+ * -
+ * -
+ * author
+ * Program write:      dupeiyong
+ * Program clear:      touchsnow
+ */
 public class Main {
-
     public static void runMain() {
         String lan = Application.getInstance().getCurrentLanguage() == Application.CHINESE ? "img/cn" : "img/en";
         FileUtils.getInstance().addSearchPath(lan);

@@ -2,12 +2,10 @@ package com.makeapp.game.shipgold;
 
 import org.ccj.Director;
 import org.ccj.Event;
-import org.ccj.Scheduler;
 import org.ccj.Touch;
 import org.ccj.audio.AudioEngine;
 import org.ccj.base.Ref;
 import org.ccj.d2.Label;
-import org.ccj.d2.Layer;
 import org.ccj.d2.Node;
 import org.ccj.d2.Sprite;
 import org.ccj.d2.action.*;
@@ -20,20 +18,17 @@ import org.ccj.math.Vec2;
 import org.ccj.physics.PhysicsBody;
 import org.ccj.physics.PhysicsContact;
 import org.ccj.physics.PhysicsContactListener;
-import org.ccj.storage.Storage;
 import org.ccj.ui.Button;
-import org.ccj.ui.TextBMFont;
-import org.ccj.ui.Widget;
 import org.fun.Function;
 import org.fun.FunctionFactory;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 
 /**
  * ControllerMain
+ * 代码出现的FunctionFactory和广告分享等sdk相关 部分有注释掉但不可删除 根据不同的渠道打开
  */
 public class ControllerMain
         extends NodeController {
@@ -56,12 +51,7 @@ public class ControllerMain
     @Bind(tag = 51)
     private PhysicsBody line2Body;//矿槽金子掉落的开关
 
-    private Node pauseLayer = null;
-    private Node popNode = null;
-    private PhysicsBody plankSpritePhysicsBody;
-    private Widget yesButton = null;//暂停窗口的确认按钮
     private Size size = null;//屏幕大小
-    private Director director = null;
     private float currentTime = 0.0f;//当前时间
     private float lastCreateCarTime = 0.0f;//上一次创建矿车的时间
     private float plankRotate = 0.0f;//挡板的角度
@@ -70,17 +60,14 @@ public class ControllerMain
     private int carCount = 0;//矿车的数量
     private int formerCount = 0;//原有的金子数量
     private int ggCount = 0;//掉落在地上的金子数量
-    private int goldCountHorizon = 7;//横排
-    private int goldCountVertical = 7;//竖排
     private boolean playGame = false;//游戏暂停或者结束
-    List<Sprite> golds = new ArrayList();
+    List<Sprite> golds = new ArrayList<Sprite>();
 
     @Override
     public void onEnter() {
         super.onEnter();
 
-
-        director = Director.getInstance();
+        Director director = Director.getInstance();
 //        director.pause();
         pauseButton.setTouchEnabled(false);
         //获取屏幕的大小
@@ -141,7 +128,7 @@ public class ControllerMain
 
     private void setPlank() {
         plankRotate = board.getRotation();
-        plankSpritePhysicsBody = board.getPhysicsBody();
+        PhysicsBody plankSpritePhysicsBody = board.getPhysicsBody();
         plankSpritePhysicsBody.setGravityEnable(false);
         double random = Math.floor(Math.random() * 2) % 2;
         if (random == 0) {
@@ -161,13 +148,15 @@ public class ControllerMain
             goldSprite.setPosition(loc);//爆炸位置
             owner.addChild(goldSprite);
         }
-        goldSprite.runAction(Sequence.create(DelayTime.create(0.3f), new CallFunc() {
-            @Override
-            public void execute() {
-                super.execute();
-                goldSprite.removeFromParent();
-            }
-        }));
+        if (goldSprite != null) {
+            goldSprite.runAction(Sequence.create(DelayTime.create(0.3f), new CallFunc() {
+                @Override
+                public void execute() {
+                    super.execute();
+                    goldSprite.removeFromParent();
+                }
+            }));
+        }
         AudioEngine.getInstance().playEffect("audio/fallgd.mp3");
     }
 
@@ -177,6 +166,8 @@ public class ControllerMain
     //相交时对象的碰撞位掩码setCollisionBitmask(十六进制)
     private void showAllGold() {
         NodeReader reader = NodeReader.create();
+        int goldCountHorizon = 7;
+        int goldCountVertical = 7;
         for (int j = 0; j < goldCountHorizon; j++) {//横排
             for (int k = 0; k < goldCountVertical; k++) {//竖排
 
@@ -324,7 +315,7 @@ public class ControllerMain
     @Override
     public void onUpdate(float delta) {
         super.onUpdate(delta);
-        if (this.playGame == false) {
+        if (!this.playGame) {
             return;
         }
         this.currentTime += delta;

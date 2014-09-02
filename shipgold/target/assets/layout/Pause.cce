@@ -8,7 +8,7 @@
     <LayerColor width="720" height="1280" positionX="0" positionY="0" color="#95000000"
                 anchorPointX="0" anchorPointY="0"/>
     <Sprite positionX="360" positionY="640" visible="true" texture="img/shipgold.plist/mianban2.png">
-        <Animation name="pop" auto="true" unitTime="0.1">
+        <Animation name="pop" auto="true" unitTime="0.1" visible="true">
             <KeyFrame index="0" scaleX="0" scaleY="0"/>
             <KeyFrame index="1" scaleX="1.25" scaleY="1.25"/>
             <KeyFrame index="2" scaleX="1" scaleY="1"/>

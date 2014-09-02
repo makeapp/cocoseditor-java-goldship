@@ -1,17 +1,15 @@
 package com.makeapp.game.shipgold;
 
-import com.googlecode.javacpp.Pointer;
-import org.ccj.Event;
-import org.ccj.Touch;
 import org.ccj.d2.Sprite;
-import org.ccj.d2.action.*;
+import org.ccj.d2.action.DelayTime;
+import org.ccj.d2.action.RepeatForever;
+import org.ccj.d2.action.RotateBy;
+import org.ccj.d2.action.Sequence;
 import org.ccj.editor.cce.Bind;
 import org.ccj.editor.cce.NodeController;
-import org.ccj.physics.PhysicsBody;
-import org.ccj.ui.Widget;
 
 /**
- * ControllerTurn
+ * ControllerTurn 运黄金的小车
  */
 public class ControllerTurn extends NodeController {
 
@@ -23,15 +21,6 @@ public class ControllerTurn extends NodeController {
 
     @Bind(tag = 2005)
     public Sprite tramcarDial;
-
-
-    public ControllerTurn() {
-
-    }
-
-    public ControllerTurn(Pointer p) {
-        super(p);
-    }
 
     @Override
     public void onEnter() {
@@ -45,7 +34,6 @@ public class ControllerTurn extends NodeController {
                 RotateBy.create(ControllerMain.WHEEL_TIME, 1880),
                 DelayTime.create(ControllerMain.WHEEL_TIME),
                 RotateBy.create(ControllerMain.WHEEL_TIME, -1880))));
-
     }
 
     @Override
