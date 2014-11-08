@@ -65,7 +65,7 @@ public class Main {
 
         Application app = new Application() {
             public boolean applicationDidFinishLaunching() {
-                if (OS_WINDOWS == getTargetPlatform() || OS_ANDROID == getTargetPlatform()) {
+                if (OS_WINDOWS == getTargetPlatform() || OS_ANDROID == getTargetPlatform() || OS_MAC == getTargetPlatform()) {
                     GLView eglView = GLView.create("CocosPlayer");
                     eglView.setFrameSize(width, height);
                     Director.getInstance().setOpenGLView(eglView);
